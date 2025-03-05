@@ -1,4 +1,4 @@
-const { response } = require("express");
+// const { response } = require("express");
 
 $(document).ready(function(){
     // Signup Part
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     $("#signupTxtEmail").blur(function(){
         let email = $("#signupTxtEmail").val().toLowerCase();
-        $("#singupEmailErr").val(email);
+        $("#signupEmailErr").val(email);
 
         let eexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

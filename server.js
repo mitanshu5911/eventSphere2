@@ -68,7 +68,7 @@ app.get("/login",function(req,resp){
 
 app.get("/checkUser", function (req, resp) {
     let email = req.query.txtEmail;
-    mysqlserver.query("select * from users where email=?", [email], function (err, jsonArray) {
+    mySqlServer.query("select * from users where email=?", [email], function (err, jsonArray) {
         if (err != null) {
             resp.send(err.message);
         }

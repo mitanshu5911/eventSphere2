@@ -255,6 +255,7 @@ main .carousel .carousel-inner .carousel-item img{
 #signupModal .modal .modal-dialog .modal-content .right form select{
     font-size: 1.25rem;
     box-shadow:  none;
+    
     border: 1px solid black;
 }
 #signupModal .modal .modal-dialog .modal-content .left{
@@ -271,6 +272,10 @@ main .carousel .carousel-inner .carousel-item img{
 }
 
 
+#signupModal .modal-dialog .modal-content .right form #btnSignup:hover{
+    background-color: white !important;
+    color: #93478F !important;
+}
 
 /* -----------------------------------common------------------------------- */
 .ok{
