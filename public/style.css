@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+nav {
+    background-color: #5271FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+nav .container-fluid .navbar-brand {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .container-fluid .navbar-brand img {
+    height: 13vh;
+    width: 13vh;
+
+}
+
+nav .container-fluid .navbar-brand .logoName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+
+
+}
+
+/* nav .container-fluid .collapse{
+     border: 2px solid wheat; 
+
+} */
+nav .container-fluid .collapse ul {
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+nav .container-fluid .collapse .login {
+    font-size: 1.20rem;
+    border: 1px solid white;
+    color: white;
+    transition: background-color 1s ease, transform 1s ease;
+
+}
+
+nav .container-fluid .collapse .login:hover {
+    transition: background-color 1s ease, transform 1s ease;
+    background-color: white;
+    color: #5271FF;
+    border: 1px solid 5271FF;
+}
+/* --------------------------------------main------------------------- */
+main{
+    background: #5271FF;
+    height: auto;
+    padding: 4vh 2vw;
+    height: 200vh;
+    /* border: 2px solid red; */
+}
+main .carousel .carousel-inner{
+    border-radius: 15px;
+
+}
+main .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+}
+/* -----------------------------------modal--------------------------- */
+.modal .modal-dialog {
+    max-width: 70vw;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 15px;
+}
+
+.modal .modal-dialog .modal-content {
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .modal-dialog .modal-content .close-btn {
+
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    font-size: 3rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal .modal-dialog .modal-content .left {
+    /* border-right: 1px solid grey; */
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-image: url(./images/login-pic.avif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.modal .modal-dialog .modal-content .middle {
+    border-right: 1px dashed grey;
+    height: 75%;
+    width: 0;
+    align-self: center;
+}
+
+.modal .modal-dialog .modal-content .right {
+    width: 50%;
+    height: 100%;
+    color: #001572;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.modal .modal-dialog .modal-content .right h3 {
+    text-align: center;
+    margin-top: 12vh;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal .modal-dialog .modal-content .right p {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal .modal-dialog .modal-content .right form {
+    padding: 0 3vw;
+}
+
+.modal .modal-dialog .modal-content .right form label {
+    font-size: 1.55rem;
+}
+
+.modal .modal-dialog .modal-content .right form .loginEmail {
+    border-bottom: 2px solid #001572;
+}
+#signupModal .modal-dialog .modal-content .right form .loginEmail {
+    border-bottom: 2px solid #93478F;
+}
+
+.modal .modal-dialog .modal-content .right form .loginEmail input {
+
+    border: none;
+    border-radius: 0;
+    width: 85%;
+    box-shadow: none !important;
+    font-size: 1.25rem;
+    padding: 0;
+    padding-left: 1vw;
+
+}
+
+.modal .modal-dialog .modal-content .right form .loginEmailerr{
+
+    height: 4vh;
+    text-align: end;
+    padding-right: 3vw;
+    margin-top: 1vh;
+    font: 1.15em sans-serif;
+
+}
+
+.modal .modal-dialog .modal-content .right form .loginEmail button{
+
+    width: 10%;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    margin-left: 3%;
+}
+
+.modal .modal-dialog .modal-content .right form .btnLogin{
+
+    width: 80%;
+    height: 6.2vh;
+    font: 1.15em sans-serif;
+    margin:3vh 10%;
+
+    background: #001572;
+    color: white;
+    border: none;
+
+    border-radius: 5px;
+}
+
+.modal .modal-dialog .modal-content .right form .btnLogin:hover{
+
+    color: #001572;
+    background: white;
+    border: 2px solid #001572;
+}
+#signupModal .modal-dialog .modal-content .right form .btnLogin:hover{
+
+    color: #93478F;
+    background: white;
+    border: 2px solid #93478F;
+}
+.modal .modal-dialog .modal-content .right form .loginPwderr{
+    text-align: start;
+    display: flex;
+    padding-right: 0vw;
+}
+
+.modal .modal-dialog .modal-content .right form .loginPwderr a{
+    width: 50%;
+    text-decoration: none;
+}
+
+
+.modal .modal-dialog .modal-content .right form .loginPwderr #loginPwdErr{
+    margin-left: 2vh;
+    width: 50%;
+    text-align: end;
+    padding-right: 3vw;
+
+}
+#signupModal .modal-dialog .modal-content .right h3{
+    margin-top: 5vh;
+}
+#signupModal .modal-dialog .modal-content .right form .btnLogin{
+    margin-bottom: 2vh;
+}
+#signupModal .modal-dialog .modal-content .right form .loginEmailerr{
+    margin-top: 0;
+}
+#signupModal .modal .modal-dialog .modal-content .right form select{
+    font-size: 1.25rem;
+    box-shadow:  none;
+    border: 1px solid black;
+}
+#signupModal .modal .modal-dialog .modal-content .left{
+    /* background-image: url(./images/signup-pic.jpg);
+     */
+     width: 50%;
+     height: 100%;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+ 
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+
+
+/* -----------------------------------common------------------------------- */
+.ok{
+    color: green;
+}
+.notOk{
+    color: red;
+}

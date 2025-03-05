@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 13vh;
+    /* border: 2px solid red; */
+    background: #5271FF;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+nav {
+    background-color: #5271FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+
+nav .container-fluid .navbar-brand {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .container-fluid .navbar-brand img {
+    height: 13vh;
+    width: 13vh;
+
+}
+
+nav .container-fluid .navbar-brand .logoName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+
+
+}
+
+
+nav .container-fluid .collapse ul {
+    /* border: 2px solid red; */
+    margin: auto;;
+}
+nav .container-fluid .collapse ul li {
+    /* border: 2px solid red; */
+    margin: 0 1vw;
+}
+nav .container-fluid .collapse ul li form{
+    margin: 0 2vw;
+}
+nav .container-fluid .collapse ul li form input{
+    width: 30vw;
+    outline: none;
+    box-shadow: none;
+}
+nav .container-fluid .collapse ul li form button{
+    border-radius: 10px;
+    width: auto;
+    margin-right: 0;
+}
+nav .container-fluid .collapse button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    color: #5271FF;
+    border:2px solid  #001881;
+    margin-right: 3vw;
+}
+
+nav .container-fluid .collapse button:hover{
+    background-color: #5271FF;
+    color: white;
+    border:2px solid  white !important;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+/* -------------------------------------------------Main-------------------------------------------- */
+
+main{
+    padding: 10px 10px;
+}
+
+.destinationWedding .top{
+    height: 30vh;
+    margin: 0 10px;
+    /* border: 2px solid green; */
+
+}
+.destinationWedding .row .col{
+    /* border: 2px solid red; */
+    height: 30vh;
+    padding: 10px;
+
+}
+.destinationWedding .row .col .img{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/udaipur-wedding.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 12px;
+}
+.destinationWedding .row .col .img .name,
+.destinationWedding .row .col .img .arrow{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    /* border: 2px solid red; */
+    align-content: end;
+    width: 50%;;
+    min-width: 10%;
+}
+
+.destinationWedding .row .col .img:hover{
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.destinationWedding .row .col .img:hover .name{
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destinationWedding .row .col .img:hover .arrow {
+    transform: translateX(5px); /* Moves arrow 5px to the right */
+    transition: transform 0.3s ease-in-out;
+}
+
+.eventTickets{
+    padding: 0px 10px;
+}
+.eventTickets .row .col{
+    height: 20vh;
+    padding: 5px 20px;
+}
+
+.eventTickets .row .col .content{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    
+    display: flex;
+
+    align-items: center;
+    border-radius: 20px;
+    background: #a9deff;
+}
+
+.eventTickets .row .col .content .img{
+    height: 80px;
+    width: 80px;
+    /* border: 2px solid yellow; */
+    background-image: url(../images/concert-ticket.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-left:1vw;
+    
+}
+.eventTickets .row .col .content .txt {
+    color: #0423ae;
+    /* border: 2px solid red; */
+    margin-left: 1vw;
+    align-content: center;
+}
+
+.eventTickets .row .col .content .txt .name{
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+.eventTickets .row .col .content .txt .para{
+    font-size: 0.85rem;
+}
+
+.eventTickets .row .col .content button{
+    font: 1.2em sans-serif;
+    width: 50px;
+    height: 30px;
+    margin: auto; padding: auto;
+    border: 1px solid #5271FF;
+    background: transparent;
+    color: #5271FF;
+    border-radius: 5px;
+}
+.eventTickets .row .col .content:hover{
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.eventTickets .row .col .content:hover button{
+    background-color: #0423ae;
+    color: white;
+    border: 1px solid #0423ae;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.advertisement{
+    /* border: 2px solid red; */
+    margin-top: 5vh;
+    display: flex;
+}
+
+.advertisement .content{
+    width: 50%;
+    height: 50vh;
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+.advertisement .content .carousel .carousel-inner{
+    border-radius: 15px;
+}
+.advertisement .content .carousel .carousel-item{
+    height: 45vh; 
+    width: 100%;;
+    background-image: url(../images/slider_image_customer_1.png);
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 10px; */
+}
+
+.events .col span{
+    /* border: 2px solid green; */
+    background: #a9deff;
+    color: #001881;
+    margin: 0 3px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: font-size 0.3s ease-in-out, padding 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.events .col span:hover{
+    /* font-weight: 800; */
+    font-size: 1.25rem;
+    padding: 3px 15px;
+    background-color: #001881;
+    color: white;
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.5);
+
+    transition: font-size 0.3s ease-in-out, padding 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+footer{
+    background: #5271FF;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5vh;
+    /* border: 2px solid red; */
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <title>EventSphere</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid p-0 m-0">
+                <a class="navbar-brand m-0 ms-3" href="#">
+                    <img src="../images/Logo.png" alt=""> <span class="logoName">EventSphere</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Events
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Wedding</a></li>
+                              <li><a class="dropdown-item" href="#">Engagement</a></li>
+                              <li><a class="dropdown-item" href="#">Birthdays</a></li>
+                              <li><a class="dropdown-item" href="#">Anniversary</a></li>
+                                <li><a class="dropdown-item" href="#">Retirement</a></li>
+                                <li><a class="dropdown-item" href="#">Housewarming Party</a></li>
+                                <li><a class="dropdown-item" href="#">Festivals</a></li>
+                                <li><a class="dropdown-item" href="#">Others</a></li>
+                              
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Cities
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Udaipur</a></li>
+                              <li><a class="dropdown-item" href="#">Jodhpur</a></li>
+                              <li><a class="dropdown-item" href="#">Jaipur</a></li>
+                              <li><a class="dropdown-item" href="#">Goa</a></li>
+                            <li><a class="dropdown-item" href="#">Kerala</a></li>
+                            <li><a class="dropdown-item" href="#">Mussoorie</a></li>
+                            <li><a class="dropdown-item" href="#">Rishikesh</a></li>
+                            <li><a class="dropdown-item" href="#">Agra</a></li>
+                            <li><a class="dropdown-item" href="#">Shimla</a></li>
+                            <li><a class="dropdown-item" href="#">Hyderabad</a></li>                            
+                            </ul>
+                        </li>
+                        <li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit" style="border: none;">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                    
+                    <button><i class="fa fa-user"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="margin-top: 10px;margin-left: 2vw; font-size: 1.5rem;">Top 10 Destination Wedding Places</h2>
+        <div class="destinationWedding">
+
+            <div class="row top">
+                <div class="col">
+                    <div class="img" id="destinationCard">
+                        <div class="name" id="destinationName">Udaipur</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="img" id="destinationCard"
+                        style="background-image: url(../images/jodhpur-wedding.jpeg);">
+                        <div class="name" id="destinationName">Jodhpur</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+
+
+                </div>
+                <div class="col">
+
+                    <div class="img" id="destinationCard" style="background-image: url(../images/jaipur-wedding.jpeg);">
+                        <div class="name" id="destinationName">Jaipur</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" id="destinationCard" style="background-image: url(../images/goa-wedding.jpeg);">
+                        <div class="name" id="destinationName">Goa</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" id="destinationCard" style="background-image: url(../images/kerala-wedding.webp);">
+                        <div class="name" id="destinationName">kerala</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row top">
+                <div class="col">
+                    <div class="img" id="destinationCard" style="background-image: url(../images/mussoorie.jpeg);">
+                        <div class="name" id="destinationName">Mussoorie</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="img" id="destinationCard"
+                        style="background-image: url(../images/rishikesh-weddings.jpg);">
+                        <div class="name" id="destinationName">Rishikesh</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+
+
+                </div>
+                <div class="col">
+
+                    <div class="img" id="destinationCard" style="background-image: url(../images/agra-wedding.jpg);">
+                        <div class="name" id="destinationName">Agra</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" id="destinationCard" style="background-image: url(../images/shimla-wedding.jpg);">
+                        <div class="name" id="destinationName">Shimla</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" id="destinationCard"
+                        style="background-image: url(../images/Hyderabad-wedding.jpg);">
+                        <div class="name" id="destinationName">Hyderabad</div>
+                        <div class="arrow" id="destinationArrow" style="text-align: end; padding-right: 10px;"><i
+                                class="fa fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h2 style="margin-top: 10px;margin-left: 2vw; font-size: 1.5rem;">Buy Tickets</h2>
+        <div class="eventTickets">
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <div class="img"></div>
+                        <div class="txt">
+                            <div class="name">Concert's Tickets</div>
+                            <div class="para">Grab Your Tickets Now!</div>
+                        </div>
+                        <button><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <div class="img" style="background-image: url(../images/movie-ticket.png);"></div>
+                        <div class="txt">
+                            <div class="name">Movie's Tickets</div>
+                            <div class="para">Grab Your Tickets Now!</div>
+                        </div>
+                        <button><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <div class="img"
+                            style="background-image: url(../images/standUp-ticket.jpg); border-radius: 50%;"></div>
+                        <div class="txt">
+                            <div class="name">StandUp's Tickets</div>
+                            <div class="para">Grab Your Tickets Now!</div>
+                        </div>
+                        <button><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="advertisement">
+            <div class="content">
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- <img src="../images/slider_image_coustomer_1.avif" class="d-block w-100" alt="..."> -->
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image: url(../images/slider_image_coustomer_2.jpeg);">
+                            <img src="../images/slider_image_coustomer_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image: url(../images/slider_image_customer3.avif);">
+                            <img src="../images/slider_image_customer_6.jfif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="content">
+
+                <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active"
+                            style="  background-image: url(../images/slider_image_customer_4.jpg);">
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image: url(../images/slider_image_coustomer_2.jpeg);">
+                            <img src="../images/slider_image_customer_5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item"
+                            style="background-image: url(../images/slider_image_customer3.avif);">
+                            <img src="../images/slider_image_customer3.avif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 style="margin-top: 10px;margin-left: 2vw; font-size: 1.5rem;">Events</h2>
+        <div class="events">
+            <div class="col d-flex justify-content-center">
+                <span>Wedding</span>
+                <span>Engagement</span>
+                <span>Birthdays</span>
+                <span>Anniversary</span>
+                <span>Retirement</span>
+                <span>Housewarming Party</span>
+                <span> Festivals</span>
+                <span>Others</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
